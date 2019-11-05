@@ -49,7 +49,7 @@ The model follow the same process for every simulation:
 1. Initialization of the poultry types and the poultry bands
 1. Initialization of the beta and interaction between poultry types
 1. Execution of the simulation until the maximum time value is reached
-    1. Computation of the number of bands activated (if there aren't band activated, go to 5)
+    1. Computation of the number of bands activated (if there aren't band activated, go to v)
     1. Computation of the sum of probabilities of event from all the activated bands
     1. Computation of the time between the current time and the next event 
     1. Computation of the event
