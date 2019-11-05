@@ -59,3 +59,8 @@ The model follow the same process for every simulation:
 1. Save of data for each type of poultry and the whole population
 
 ## Equations
+
+
+## About
+The model is executed using GCC compiler on both Mac OS and Windows. 
+The model was developed on the IDE Eclipse for C/C++ Developer, version of September 2019. 
