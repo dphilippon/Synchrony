@@ -13,7 +13,7 @@ The project is composed of different subfolders:
 
 ## Inputs
 The model uses two different files:
-* *band_type.csv*, a CSV file of 16 columns containing one row per type of poultry band. The columns are the following:  
+* *band_type.csv*, a CSV file of 17 columns containing one row per type of poultry band. The columns are the following:  
   * *id*, an integer representing the id of the poultry type,
   * *label*, a string representing the label of the poultry type, 
   * *initial_s*, an integer representing the initial number of susceptible chickens per poultry band of the poultry type, 
