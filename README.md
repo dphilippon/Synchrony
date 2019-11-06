@@ -64,7 +64,7 @@ The list of variables for the different equations is following:
 - &rho;<sub>nm</sub>, the coupling from bands of type n to bands of type m,
 - &sigma;<sub>n</sub>, the transition rate from latent-exposed to infectious of bands of type n, 
 - &gamma;<sub>n</sub>, the transition rate from infectious to protected-recovered of bands of type n, 
-- &ksi;<sub>n</sub>, the transition rate from protected-recovered to susceptible of bands of type n, 
+- &xi;<sub>n</sub>, the transition rate from protected-recovered to susceptible of bands of type n, 
 - &lambda;<sub>i</sub>, the transition rate from susceptible to exposed-latent of band i,
 
 For each band i, we compute &lambda;<sub>i</sub> as following:
