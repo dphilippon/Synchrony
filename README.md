@@ -29,7 +29,8 @@ The model uses two different files:
    * *nb_band*, an integer representing the number of poultry bands of that poultry type, 
    * *min_phi*, a float representing the minimum time in days before the earliest possible activation of a poultry band for that poultry type,
    * *max_phi*, a float representing the maximum time in days before the earliest possible activation of a poultry band for that poultry type,
-   * *renewal*, a boolean to renew the bands (after the first activation), if true, with the initial values of S, E, I, R, N as given in the row, or with the chicken of the poultry bands of that poultry type being all susceptibles  
+   * *renewal*, a boolean to renew the bands (after the first activation), if true, with the initial values of S, E, I, R, N as given in the row, or with the chicken of the poultry bands of that poultry type being all susceptibles,
+   * *rho*, a float representing the proportion of interaction with other bands for bands of that poultry type. 
 * *linked.csv*, a CSV file of 4 columns containing one row per interaction between poultry types. The columns are the following:  
   * *id_from*, an integer representing the id of the poultry type from which the interaction is set,
   * *id_to*, an integer representing the id of the poultry type to which the interaction is set,
@@ -61,7 +62,7 @@ The model follow the same process for every simulation:
 ## Equations
 The list of variables for the different equations is following:
 - &beta;<sub>nm</sub>, the successful contact rate from the infecteds of bands of type n to the susceptible of bands of type m,
-- &rho;<sub>nm</sub>, the coupling from bands of type n to bands of type m,
+- &rho;<sub>nm</sub>, the coupling from bands of type n to bands of type m (i.e. the value of the rho column for type n in the file band_type.csv multiplied by the rho value for the from_type column for type m and to_type column for n),
 - &sigma;<sub>n</sub>, the transition rate from latent-exposed to infectious of bands of type n, 
 - &gamma;<sub>n</sub>, the transition rate from infectious to protected-recovered of bands of type n, 
 - &xi;<sub>n</sub>, the transition rate from protected-recovered to susceptible of bands of type n, 
