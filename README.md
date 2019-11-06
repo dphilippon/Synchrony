@@ -71,7 +71,7 @@ For each band i, we compute &lambda;<sub>i</sub> as following:
 
 ![\Large Equation Lambda](https://latex.codecogs.com/gif.latex?\lambda&space;_{i}&space;=&space;\left&space;[&space;\beta&space;_{nn}&space;*&space;(1-&space;\sum_{m=0}^{T-n}\rho&space;_{mn})&space;*&space;\frac{I_{i}}{N_{i}}&space;&plus;&space;\sum_{m=0}^{T}&space;(&space;\beta&space;_{mn}&space;*&space;\rho&space;_{mn}&space;*&space;\frac{\sum_{j=0}^{B-i}&space;I&space;_{j}}{\sum_{j=0}^{B-i}&space;N&space;_{j}}&space;)&space;\right&space;]&space;*&space;S_{i})
 
-with n being the poultry type of the band i, T the list of the different poultry types, B the list of the different bands.
+with n being the poultry type of the band i, T the list of the different poultry types, B the list of the different activated bands.
 
 W is then computed as following:
 
